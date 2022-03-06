@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Clock</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/style.css" />
+        <title>Clock</title>
+    </head>
 
-  <body>
-    <section><h1 id="clock">00:00:00</h1></section>
-
-    <script src="src/app.js"></script>
-    <script src="src/clock.js"></script>
-  </body>
+    <body>
+        <section>
+            <h1 id="clock">Loading...</h1>
+            <h1 id="stopwatch">00:00:00</h1>
+            <input id="start" type="button" value="시작" />
+            <input id="reset" type="button" value="리셋" />
+            <div id="pos"></div>
+        </section>
+        <!-- js -->
+        <noscript>자바스크립트를 켜주세요</noscript>
+        <script src="src/clock.js"></script>
+        <script src="src/stopwatch.js"></script>
+    </body>
 </html>

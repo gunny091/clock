@@ -11,4 +11,4 @@ function showTimeToClock() {
 }
 
 showTimeToClock();
-setInterval(showTimeToClock, 1000);
+setInterval(showTimeToClock, 100);
