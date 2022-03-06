@@ -1,0 +1,22 @@
+html,
+body,
+section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+h1#clock {
+  font-size: 10vw;
+}
+
+ul {
+  text-decoration: underline;
+}
