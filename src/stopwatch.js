@@ -87,15 +87,16 @@ window.addEventListener("keydown", e => {
     if (e.key === " ") {
         startButtonHandler();
         startButton.classList.add(CLICKED);
-        setTimeout(() => {
-            startButton.classList.remove(CLICKED);
-        }, 100);
     } else if (e.key === "Shift") {
         resetButtonHandler();
         resetButton.classList.add(CLICKED);
-        setTimeout(() => {
-            resetButton.classList.remove(CLICKED);
-        }, 100);
+    }
+});
+window.addEventListener("keyup", e => {
+    if (e.key === " ") {
+        startButton.classList.remove(CLICKED);
+    } else if (e.key === "Shift") {
+        resetButton.classList.remove(CLICKED);
     }
 });
 setInterval(showTimeToStopwatch, 10);
