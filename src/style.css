@@ -55,6 +55,36 @@ input {
     display: none;
 }
 
+div#smlscr {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: darkorange;
+    width: 100vw;
+    height: 100vh;
+}
+div#smlscrtxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media all and (max-height: 400px) {
+    div#smlscr {
+        display: block;
+    }
+}
+@media all and (max-width: 400px) {
+    div#smlscr {
+        display: block;
+    }
+}
+
 @media (hover: hover) {
     input:hover,
     input.clicked {
