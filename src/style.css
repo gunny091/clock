@@ -1,9 +1,12 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
 html,
 body,
 section {
     width: 100%;
     height: 100%;
     margin: 0;
+    font-family: "Nanum Gothic Coding", monospace;
 }
 
 section {
@@ -14,16 +17,16 @@ section {
 }
 
 h1#clock {
-    font-size: 10vw;
-    margin: 0px 0px 50px 0px;
+    font-size: 15vw;
+    margin: 0px 0px 4vw 0px;
 }
 h1#stopwatch {
-    font-size: 7.5vw;
-    margin: 0px 0px 50px 0px;
+    font-size: 10vw;
+    margin: 0px 0px 4vw 0px;
 }
 
 div#pos {
-    height: 20%;
+    height: 10%;
 }
 
 div#p {
@@ -74,12 +77,12 @@ div#smlscrtxt {
     font-weight: bold;
 }
 
-@media all and (max-height: 400px) {
+@media all and (max-height: 600px) {
     div#smlscr {
         display: block;
     }
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 319px) {
     div#smlscr {
         display: block;
     }
